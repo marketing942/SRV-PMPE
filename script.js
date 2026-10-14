@@ -41,7 +41,7 @@
       },
       vip: {
         produto: "Ingresso VIP — Super Revisão de Véspera PMPE",
-        preco: "R$ 45,00", precoDe: "R$ 100,00", off: "-55%",
+        preco: "R$ 167,00", precoDe: "R$ 299,00", off: "-55%",
         checkout: "https://checkout.cppem.com.br/pay/srv-pmpe-ingresso-vip"
       }
     }
