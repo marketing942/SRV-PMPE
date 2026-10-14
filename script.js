@@ -27,18 +27,21 @@
        · parcelas / parcela (opcionais): a PARCELA vira o número grande e o
          à vista desce para a linha de baixo. Copie do checkout — se houver
          juros, a página NUNCA pode dizer "sem juros".
+       · precoDe / off (opcionais): o "de R$ X" riscado e o desconto — os
+         MESMOS números do checkout, senão a página contradiz a tela de
+         pagamento no momento em que a pessoa vai digitar o cartão.
        · checkout: link do produto. Vazio = o botão mostra o aviso
          "vendas abrem em breve" em vez de navegar.
        · produto: o nome que vai no evento de clique do dataLayer. */
     ingressos: {
       comum: {
         produto: "Ingresso Comum — Super Revisão de Véspera PMPE",
-        preco: "",
+        preco: "R$ 45,00", precoDe: "R$ 100,00", off: "-55%",
         checkout: "https://checkout.cppem.com.br/pay/srv-pmpe-ingresso-comum"
       },
       vip: {
         produto: "Ingresso VIP — Super Revisão de Véspera PMPE",
-        preco: "",
+        preco: "R$ 45,00", precoDe: "R$ 100,00", off: "-55%",
         checkout: "https://checkout.cppem.com.br/pay/srv-pmpe-ingresso-vip"
       }
     }
@@ -103,6 +106,16 @@
       avista.hidden = !parcelado;
       if (parcelado) $("strong", avista).textContent = dados.preco;
     }
+
+    var de = $('[data-ingresso-de="' + tipo + '"]');
+    if (de) {
+      de.hidden = !(dados.precoDe && dados.preco);
+      if (!de.hidden) {
+        $("s", de).textContent = dados.precoDe;
+        $("em", de).textContent = dados.off || "";
+        $("em", de).hidden = !dados.off;
+      }
+    }
   }
 
   $$("[data-ingresso-preco]").forEach(function (el) {
@@ -120,7 +133,7 @@
     if (!faixa || !txt) return;
 
     var mensagens = algumAberto
-      ? ["Vendas abertas!", "Vagas limitadas", "20/02 · Shopping Difusora", "A véspera é uma só"]
+      ? ["Vendas abertas!", "Vagas VIP limitadas", "20/02 · Shopping Difusora", "A véspera é uma só"]
       : [];
     faixa.hidden = !mensagens.length;
     document.documentElement.classList.toggle("tem-alerta", mensagens.length > 0);

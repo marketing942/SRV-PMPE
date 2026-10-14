@@ -203,7 +203,7 @@
 
         <a class="urgente anim d5" href="#ingressos">
           <i aria-hidden="true"></i>
-          <span data-urgencia>Vendas abertas — as vagas do 5º piso são limitadas.</span>
+          <span data-urgencia>Vendas abertas — as vagas VIP são limitadas.</span>
         </a>
 
         <!-- Some sozinho quando o dia 20/02 chega (script.js). -->
@@ -231,8 +231,8 @@
     <!-- ================= FITA DE URGÊNCIA ================= -->
     <div class="strip strip--fita" aria-hidden="true">
       <div class="strip__track">
-        <span>Véspera da prova</span><span>Vendas abertas</span><span>20/02 · Shopping Difusora</span><span>5º piso</span><span>Ingresso VIP e Comum</span><span>Vagas limitadas</span>
-        <span>Véspera da prova</span><span>Vendas abertas</span><span>20/02 · Shopping Difusora</span><span>5º piso</span><span>Ingresso VIP e Comum</span><span>Vagas limitadas</span>
+        <span>Véspera da prova</span><span>Vendas abertas</span><span>20/02 · Shopping Difusora</span><span>5º piso</span><span>Ingresso VIP e Comum</span><span>Vagas VIP limitadas</span>
+        <span>Véspera da prova</span><span>Vendas abertas</span><span>20/02 · Shopping Difusora</span><span>5º piso</span><span>Ingresso VIP e Comum</span><span>Vagas VIP limitadas</span>
       </div>
     </div>
 
@@ -423,8 +423,8 @@
           <span class="eyebrow">Vendas abertas</span>
           <h2 class="section__title" id="ing-title">A véspera é uma só. <span class="gold">Escolha o seu lugar.</span></h2>
           <p class="section__lead">
-            O <strong>VIP</strong> garante lugar nas <strong>primeiras fileiras</strong>.
-            O <strong>Comum</strong> dá acesso à revisão completa. As vagas do 5º piso são limitadas.
+            O <strong>VIP</strong> tem <strong>vagas limitadas</strong> e garante lugar nas
+            <strong>primeiras fileiras</strong>. O <strong>Comum</strong> dá acesso à revisão completa.
           </p>
         </div>
 
@@ -437,7 +437,7 @@
               <i class="plano__brasao" aria-hidden="true"></i>
               <span class="plano__selo"><i aria-hidden="true"></i>Mais completo</span>
               <header class="plano__head">
-                <span class="plano__tag">Vagas limitadas</span>
+                <span class="plano__tag">Vagas limitadas · lote VIP</span>
                 <h3 class="plano__nome">Ingresso VIP</h3>
                 <p class="plano__desc">Tudo do comum, mais perto do palco.</p>
               </header>
@@ -449,10 +449,12 @@
               <div class="plano__rodape">
                 <div class="plano__preco">
                   <span class="plano__preco-label">Ingresso VIP</span>
+                  <!-- "de R$ X" riscado + desconto: só aparece se o CONFIG tiver precoDe -->
+                  <span class="plano__de" data-ingresso-de="vip" hidden>de <s></s> <em></em></span>
                   <b data-ingresso-preco="vip">Vendas abertas</b>
                   <span class="plano__avista" data-ingresso-avista="vip" hidden>no cartão · ou <strong></strong> à
                     vista</span>
-                  <span class="plano__preco-nota">Vagas VIP limitadas</span>
+                  <span class="plano__preco-nota">Poucas vagas VIP — quando acabar, acabou</span>
                 </div>
                 <a class="btn btn--gold btn--lg btn--block shine" data-compra="vip" href="https://checkout.cppem.com.br/pay/srv-pmpe-ingresso-vip">
                   <span>Quero o VIP</span>
@@ -477,10 +479,12 @@
             <div class="plano__rodape">
               <div class="plano__preco">
                 <span class="plano__preco-label">Ingresso Comum</span>
+                <!-- "de R$ X" riscado + desconto: só aparece se o CONFIG tiver precoDe -->
+                <span class="plano__de" data-ingresso-de="comum" hidden>de <s></s> <em></em></span>
                 <b data-ingresso-preco="comum">Vendas abertas</b>
                 <span class="plano__avista" data-ingresso-avista="comum" hidden>no cartão · ou <strong></strong> à
                   vista</span>
-                <span class="plano__preco-nota">Vagas limitadas</span>
+                <span class="plano__preco-nota">Acesso à revisão completa</span>
               </div>
               <a class="btn btn--ghost btn--lg btn--block" data-compra="comum" href="https://checkout.cppem.com.br/pay/srv-pmpe-ingresso-comum">
                 <span>Quero o comum</span>
