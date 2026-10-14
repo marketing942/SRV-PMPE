@@ -133,7 +133,7 @@
     if (!faixa || !txt) return;
 
     var mensagens = algumAberto
-      ? ["Vendas abertas!", "Vagas VIP limitadas", "20/02 · Shopping Difusora", "A véspera é uma só"]
+      ? ["Vendas abertas!", "Caruaru – PE · 20/02", "Convidado: Prof. Everton Mota", "Vagas VIP limitadas"]
       : [];
     faixa.hidden = !mensagens.length;
     document.documentElement.classList.toggle("tem-alerta", mensagens.length > 0);
@@ -336,7 +336,7 @@
   render();
 
   /* ─── reveal ao rolar ─── */
-  var alvos = $$(".section__head, .pilar, .carrossel, .info, .plano, .faq__item, .final__inner");
+  var alvos = $$(".section__head, .pilar, .lineup__card, .carrossel, .info, .plano, .faq__item, .final__inner");
   alvos.forEach(function (el) { el.classList.add("reveal"); });
 
   if (!("IntersectionObserver" in window)) {
