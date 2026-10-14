@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <!-- Google Tag Manager (mesmo container das demais landings do CPPEM).
+       Precisa ser o primeiro script do <head> — é ele que carrega a PixelX. -->
+  <script>(function (w, d, s, l) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '?l=' + l : ''; j.async = true; j.src =
+          'https://sgtm.cppem.com.br/metrics/' + dl; f.parentNode.insertBefore(j, f);
+    })
+      (window, document, 'script', 'dataLayer');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Super Revisão de Véspera PMPE — 20/02 no Shopping Difusora | CPPEM</title>
+  <meta name="description"
+    content="Super Revisão de Véspera PMPE do CPPEM: 20 de fevereiro, presencial, no 5º piso do Shopping Difusora, em Caruaru. A última revisão antes da prova da Polícia Militar de Pernambuco.">
+
+  <link rel="icon" href="public/favicon.ico" sizes="48x48">
+  <link rel="icon" href="public/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="icon" href="public/favicon-512.png" type="image/png" sizes="512x512">
+  <link rel="apple-touch-icon" href="public/favicon-192.png">
+
+  <!-- Open Graph: sem estas tags, WhatsApp e Instagram montam o preview por conta
+     própria — sem imagem e com o texto que encontrarem.
+     ⚠️ Falta: og:url (domínio final). A imagem usa a foto da última edição. -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="CPPEM Concursos Públicos">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Super Revisão de Véspera PMPE — 20/02 no Shopping Difusora">
+  <meta property="og:description"
+    content="A última revisão antes da prova da PMPE. Presencial, no 5º piso do Shopping Difusora, em Caruaru.">
+  <meta property="og:image" content="public/prova-03.webp">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700;800&family=Rajdhani:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- O brasão é o protagonista da entrada da hero: sem o preload ele só começa
+     a baixar depois do CSS e o carimbo bate num medalhão vazio. -->
+  <link rel="preload" as="image" href="public/brasao-pmpe.webp">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://sgtm.cppem.com.br/metrics/ns.html" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+  <!-- Camadas globais da página -->
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="brasas" id="brasas" aria-hidden="true"></div>
+
+  <!-- ================= HEADER ================= -->
+  <header class="header" id="header">
+    <div class="header__inner">
+      <a class="brand" href="#topo" aria-label="CPPEM — início">
+        <span class="brand__leao">
+          <img src="public/emblema-leao.webp" alt="CPPEM Concursos Públicos" width="400" height="465">
+        </span>
+        <span class="brand__nome">CPPEM<i>Concursos Públicos</i></span>
+      </a>
+
+      <nav class="nav" aria-label="Seções da página">
+        <a href="#edicao">Última edição</a>
+        <a href="#onde">Onde e quando</a>
+        <a href="#ingressos">Ingressos</a>
+        <a href="#faq">Dúvidas</a>
+      </nav>
+
+      <span class="opsel">
+        <i aria-hidden="true"></i>
+        <b>Véspera PMPE</b>
+        <span>20/02</span>
+      </span>
+
+      <a class="btn btn--gold shine" data-cta href="#ingressos">
+        <span>Garantir vaga</span>
+      </a>
+    </div>
+
+    <!-- A faixa de alerta: presa embaixo do header, acompanha a rolagem.
+         Alterna as mensagens (script.js) e leva aos ingressos.
+         Nasce escondida e só aparece com venda aberta. -->
+    <a class="alerta" href="#ingressos" data-cta data-alerta hidden>
+      <i aria-hidden="true"></i>
+      <b data-alerta-txt>Vendas abertas!</b>
+      <span class="alerta__ir" aria-hidden="true">Garantir vaga →</span>
+    </a>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+     HERO
+     ---------------------------------------------------------
+     A mesma cena do Aulão PMPE (tempos em --impacto, styles.css):
+       1. o leão do CPPEM rompe a tela pelo centro;
+       2. o brasão da PMPE despenca por cima e quebra de novo;
+       3. o leão some — só o brasão fica;
+       4. o carimbo "VÉSPERA DA PROVA" bate por cima: é o gancho da página.
+     ========================================================= -->
+    <section class="hero" id="topo">
+      <div class="hero__bg" id="heroBg" aria-hidden="true"><i></i></div>
+      <div class="hero__veil" aria-hidden="true"></div>
+      <div class="hero__grid" aria-hidden="true"></div>
+      <div class="hero__scan" aria-hidden="true"></div>
+      <div class="hero__dawn" aria-hidden="true"></div>
+      <div class="sparks" id="sparks" aria-hidden="true"></div>
+      <div class="hero__brasas" id="heroBrasas" aria-hidden="true"></div>
+      <div class="hero__cacos" id="heroCacos" aria-hidden="true"></div>
+      <div class="hero__flash" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <span class="tag anim d1">
+          <i class="dot" aria-hidden="true"></i>
+          <span>20/02 · Shopping Difusora · 5º piso</span>
+        </span>
+
+        <h1 class="hero__title anim d2">
+          <span class="hero__desig">Super Revisão de Véspera</span>
+          <span class="luz">PMPE</span>
+        </h1>
+
+        <div class="cena" id="cenaHero">
+          <!-- 1ª quebra: o leão do CPPEM rompe a tela pelo centro -->
+          <span class="cena__leao" aria-hidden="true"><img src="public/emblema-leao.webp" alt="" width="400"
+              height="465"></span>
+          <svg class="cena__racha" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+            <g class="racha__raios">
+              <path pathLength="1" d="M0 0 L14 -9 L22 -8 L35 -19 L52 -22 L70 -37 L96 -44" />
+              <path pathLength="1" d="M0 0 L16 4 L30 2 L44 12 L63 13 L80 24 L98 27" />
+              <path pathLength="1" d="M0 0 L6 15 L9 30 L20 44 L22 62 L34 80 L38 98" />
+              <path pathLength="1" d="M0 0 L-8 13 L-10 27 L-22 38 L-26 57 L-40 70 L-47 95" />
+              <path pathLength="1" d="M0 0 L-15 5 L-28 1 L-42 10 L-60 8 L-75 19 L-97 18" />
+              <path pathLength="1" d="M0 0 L-12 -10 L-20 -24 L-36 -30 L-44 -48 L-62 -58 L-72 -90" />
+              <path pathLength="1" d="M0 0 L2 -16 L-4 -30 L4 -46 L0 -64 L8 -82 L4 -99" />
+              <path pathLength="1" d="M0 0 L10 -14 L24 -30 L30 -52 L46 -66 L58 -88" />
+              <path pathLength="1" d="M0 0 L-6 -4 L-20 -8 L-34 -14 L-52 -20 L-80 -26" />
+            </g>
+            <g class="racha__aneis">
+              <path pathLength="1" d="M35 -19 L44 12 L30 2" />
+              <path pathLength="1" d="M44 12 L20 44 L-10 27" />
+              <path pathLength="1" d="M-22 38 L-42 10 L-34 -14" />
+              <path pathLength="1" d="M-36 -30 L-4 -30 L24 -30" />
+              <path pathLength="1" d="M63 13 L34 80" />
+              <path pathLength="1" d="M-60 8 L-40 70" />
+              <path pathLength="1" d="M-62 -58 L0 -64 L46 -66" />
+            </g>
+          </svg>
+          <!-- 2ª quebra: o brasão da PMPE bate por cima do leão -->
+          <svg class="cena__racha cena__racha--2" viewBox="-100 -100 200 200" aria-hidden="true" focusable="false">
+            <g class="racha__raios">
+              <path pathLength="1" d="M0 0 L12 -6 L26 -14 L40 -12 L58 -28 L84 -34" />
+              <path pathLength="1" d="M0 0 L10 10 L24 14 L34 30 L52 38 L70 60" />
+              <path pathLength="1" d="M0 0 L-4 14 L-14 26 L-12 44 L-24 62 L-26 86" />
+              <path pathLength="1" d="M0 0 L-14 -2 L-26 -12 L-44 -10 L-58 -24 L-86 -30" />
+              <path pathLength="1" d="M0 0 L-2 -14 L6 -28 L2 -46 L10 -66 L6 -88" />
+              <path pathLength="1" d="M0 0 L-12 8 L-30 12 L-44 26 L-66 30" />
+            </g>
+            <g class="racha__aneis">
+              <path pathLength="1" d="M26 -14 L24 14 L-4 14" />
+              <path pathLength="1" d="M-14 26 L-30 12 L-26 -12 L6 -28 L26 -14" />
+              <path pathLength="1" d="M40 -12 L34 30" />
+            </g>
+          </svg>
+          <div class="selo selo--carimbo" id="seloHero">
+            <span class="selo__aro" aria-hidden="true"></span>
+            <span class="selo__core">
+              <img src="public/brasao-pmpe.webp" alt="Brasão da Polícia Militar de Pernambuco" width="357" height="419">
+            </span>
+            <i class="selo__clarao" aria-hidden="true"></i>
+            <i class="selo__onda" aria-hidden="true"></i>
+            <i class="selo__onda selo__onda--2" aria-hidden="true"></i>
+            <i class="selo__onda selo__onda--3" aria-hidden="true"></i>
+          </div>
+          <span class="edital" id="editalCarimbo"><small>Véspera</small><b>Da prova</b></span>
+        </div>
+
+        <p class="hero__sub anim d4">
+          <strong>A última revisão antes da prova.</strong> Um dia presencial para fechar o conteúdo,
+          tirar as dúvidas de última hora e chegar na prova da Polícia Militar de Pernambuco no ponto.
+        </p>
+
+        <div class="hero__cta anim d5">
+          <a class="btn btn--gold btn--lg shine" data-cta href="#ingressos">
+            <span>Quero minha vaga</span>
+          </a>
+          <a class="btn btn--ghost btn--lg" href="#edicao"><span>Ver a última edição</span></a>
+        </div>
+
+        <a class="urgente anim d5" href="#ingressos">
+          <i aria-hidden="true"></i>
+          <span data-urgencia>Vendas abertas — as vagas do 5º piso são limitadas.</span>
+        </a>
+
+        <!-- Some sozinho quando o dia 20/02 chega (script.js). -->
+        <div class="hero__relogio anim d5" data-relogio-bloco>
+          <em>Faltam</em>
+          <div class="relogio" data-relogio>
+            <span><b data-cd="d">00</b><small>dias</small></span>
+            <span><b data-cd="h">00</b><small>horas</small></span>
+            <span><b data-cd="m">00</b><small>min</small></span>
+            <span><b data-cd="s">00</b><small>seg</small></span>
+          </div>
+        </div>
+
+        <div class="ficha anim d5">
+          <div class="ficha__item"><b>20/02</b><span>Sábado</span></div>
+          <div class="ficha__item"><b>1 DIA</b><span>De revisão</span></div>
+          <div class="ficha__item"><b>5º PISO</b><span>Shopping Difusora</span></div>
+          <div class="ficha__item"><b>VÉSPERA</b><span>Da prova</span></div>
+        </div>
+      </div>
+
+      <div class="scroller" aria-hidden="true"><i></i></div>
+    </section>
+
+    <!-- ================= FITA DE URGÊNCIA ================= -->
+    <div class="strip strip--fita" aria-hidden="true">
+      <div class="strip__track">
+        <span>Véspera da prova</span><span>Vendas abertas</span><span>20/02 · Shopping Difusora</span><span>5º piso</span><span>Ingresso VIP e Comum</span><span>Vagas limitadas</span>
+        <span>Véspera da prova</span><span>Vendas abertas</span><span>20/02 · Shopping Difusora</span><span>5º piso</span><span>Ingresso VIP e Comum</span><span>Vagas limitadas</span>
+      </div>
+    </div>
+
+    <!-- ================= O FORMATO ================= -->
+    <section class="section" id="formato" aria-labelledby="formato-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">O formato</span>
+          <h2 class="section__title" id="formato-title">Na véspera, não dá para<br><span class="gold">estudar tudo de novo.</span></h2>
+          <p class="section__lead">
+            Dá para revisar o que importa. A <strong>Super Revisão de Véspera</strong> é o último treino
+            antes da prova da PMPE: presencial, intensa e direto ao ponto.
+          </p>
+        </div>
+
+        <div class="pilares">
+          <div class="pilar">
+            <span class="pilar__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 4v6h6" />
+                <path d="M4.9 15a8 8 0 1 0 1.6-8.6L4 10" />
+              </svg>
+            </span>
+            <h3>Revisão final</h3>
+            <p>O conteúdo que a prova cobra, revisado de uma vez, sem enrolação.</p>
+          </div>
+          <div class="pilar">
+            <span class="pilar__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="16" rx="1" />
+                <path d="M3 10h18M8 3v4M16 3v4" />
+                <path d="M12 14v3" />
+              </svg>
+            </span>
+            <h3>Na véspera</h3>
+            <p>Um dia antes da prova: o que você revisa aqui ainda está fresco na hora de marcar.</p>
+          </div>
+          <div class="pilar">
+            <span class="pilar__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M5 3h11l3 3v15H5z" />
+                <path d="M8.5 10.5l1.8 1.8 3.4-3.4" />
+                <path d="M8.5 16h7" />
+              </svg>
+            </span>
+            <h3>Questões da banca</h3>
+            <p>Teoria rápida e questão na sequência, no estilo do que vai cair.</p>
+          </div>
+          <div class="pilar">
+            <span class="pilar__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 21V5l8-3 8 3v16" />
+                <path d="M9 21v-4h6v4M8 8h2M14 8h2M8 12h2M14 12h2" />
+              </svg>
+            </span>
+            <h3>No Shopping Difusora</h3>
+            <p>Presencial, no 5º piso. Dúvida tirada na hora, foco do começo ao fim.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     PROVA SOCIAL — carrossel da última edição
+     ---------------------------------------------------------
+     Fotos REAIS da edição anterior da Super Revisão de Véspera PMPE.
+     O carrossel é scroll-snap nativo: arrasta no dedo, rola no trackpad e
+     funciona sem JS. O script só acrescenta setas, bolinhas e o avanço
+     automático (que para no primeiro toque e respeita reduced-motion).
+     Para trocar/adicionar fotos: um <figure class="carrossel__item"> por foto.
+     ========================================================= -->
+    <section class="section section--alt" id="edicao" aria-labelledby="edicao-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">A última edição</span>
+          <h2 class="section__title" id="edicao-title">Na última véspera, <span class="gold">foi assim.</span></h2>
+          <p class="section__lead">
+            Auditório cheio, todo mundo com a camisa e a cabeça na prova. Essas são fotos reais da
+            última <strong>Super Revisão de Véspera PMPE</strong> do CPPEM.
+          </p>
+        </div>
+
+        <div class="carrossel" data-carrossel>
+          <div class="carrossel__trilho" data-carrossel-trilho tabindex="0" role="region"
+            aria-roledescription="carrossel" aria-label="Fotos da última Super Revisão de Véspera PMPE">
+            <figure class="carrossel__item" aria-roledescription="slide" aria-label="1 de 4">
+              <img src="public/prova-03.webp"
+                alt="Plateia lotada na última Super Revisão de Véspera PMPE, com centenas de alunos vestindo a camisa “A vaga é minha!”"
+                width="1400" height="788" loading="lazy">
+              <figcaption>Casa cheia na última edição</figcaption>
+            </figure>
+            <figure class="carrossel__item" aria-roledescription="slide" aria-label="2 de 4">
+              <img src="public/prova-02.webp"
+                alt="Alunos sentados nas primeiras fileiras, com a camisa “A vaga é minha!”, atentos à revisão"
+                width="1400" height="788" loading="lazy">
+              <figcaption>Foco total nas primeiras fileiras</figcaption>
+            </figure>
+            <figure class="carrossel__item" aria-roledescription="slide" aria-label="3 de 4">
+              <img src="public/prova-04.webp"
+                alt="Professor no palco falando para o auditório cheio, visto do fundo da plateia"
+                width="1400" height="788" loading="lazy">
+              <figcaption>Do palco até a última cadeira</figcaption>
+            </figure>
+            <figure class="carrossel__item" aria-roledescription="slide" aria-label="4 de 4">
+              <img src="public/prova-01.webp"
+                alt="Quatro alunos posando em frente ao palco, com o telão da Super Revisão de Véspera PMPE ao fundo"
+                width="1400" height="788" loading="lazy">
+              <figcaption>A vaga é minha!</figcaption>
+            </figure>
+          </div>
+
+          <div class="carrossel__ctrl" data-carrossel-ctrl hidden>
+            <button class="carrossel__seta" type="button" data-carrossel-ant aria-label="Foto anterior">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
+            </button>
+            <div class="carrossel__dots" data-carrossel-dots></div>
+            <button class="carrossel__seta" type="button" data-carrossel-prox aria-label="Próxima foto">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" /></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="edicao__cta">
+          <a class="btn btn--gold btn--lg shine" data-cta href="#ingressos"><span>Quero estar na próxima</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ONDE E QUANDO ================= -->
+    <section class="section" id="onde" aria-labelledby="onde-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Onde e quando</span>
+          <h2 class="section__title" id="onde-title">Anote na <span class="gold">agenda</span></h2>
+        </div>
+
+        <div class="ficha-evento">
+          <div class="info">
+            <span class="info__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="5" width="18" height="16" rx="1" />
+                <path d="M3 10h18M8 3v4M16 3v4" />
+              </svg>
+            </span>
+            <span class="info__cab">Data</span>
+            <b class="info__val">20 de fevereiro</b>
+            <span class="info__sub">Sábado · véspera da prova</span>
+          </div>
+          <div class="info">
+            <span class="info__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" />
+                <circle cx="12" cy="9.5" r="2.5" />
+              </svg>
+            </span>
+            <span class="info__cab">Local</span>
+            <b class="info__val">Shopping Difusora</b>
+            <span class="info__sub">5º piso · Caruaru – PE</span>
+          </div>
+          <div class="info">
+            <span class="info__ico" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 9a2 2 0 0 0 0 4v5h18v-5a2 2 0 0 0 0-4V5H3z" />
+                <path d="M14 5v13" stroke-dasharray="2 2" />
+              </svg>
+            </span>
+            <span class="info__cab">Ingressos</span>
+            <b class="info__val">VIP e Comum</b>
+            <span class="info__sub">Checkout oficial do CPPEM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+     INGRESSOS
+     ---------------------------------------------------------
+     Dois ingressos, dois checkouts. Preço e link moram no CONFIG do
+     script.js. Preço vazio + link preenchido = "Vendas abertas".
+     Os botões levam direto ao checkout (com as UTMs da visita).
+
+     ⚠️ Os benefícios do VIP abaixo seguem o padrão dos eventos do CPPEM
+     (primeiras fileiras). Confirme com a equipe antes de publicar.
+     ========================================================= -->
+    <section class="section section--alt" id="ingressos" aria-labelledby="ing-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Vendas abertas</span>
+          <h2 class="section__title" id="ing-title">A véspera é uma só. <span class="gold">Escolha o seu lugar.</span></h2>
+          <p class="section__lead">
+            O <strong>VIP</strong> garante lugar nas <strong>primeiras fileiras</strong>.
+            O <strong>Comum</strong> dá acesso à revisão completa. As vagas do 5º piso são limitadas.
+          </p>
+        </div>
+
+        <div class="planos">
+          <!-- ---------- VIP ----------
+           PRIMEIRO de propósito: é o maior ticket, e é o que a pessoa lê antes
+           de chegar ao comum. O invólucro existe só para o brilho vermelho. -->
+          <div class="plano-vip">
+            <article class="plano plano--vip">
+              <i class="plano__brasao" aria-hidden="true"></i>
+              <span class="plano__selo"><i aria-hidden="true"></i>Mais completo</span>
+              <header class="plano__head">
+                <span class="plano__tag">Vagas limitadas</span>
+                <h3 class="plano__nome">Ingresso VIP</h3>
+                <p class="plano__desc">Tudo do comum, mais perto do palco.</p>
+              </header>
+              <ul class="plano__lista">
+                <li class="plano__tudo">Tudo do Ingresso Comum</li>
+                <li class="plano__destaque"><b>Primeiras fileiras garantidas</b> no 5º piso</li>
+                <li>Mais perto do professor do começo ao fim</li>
+              </ul>
+              <div class="plano__rodape">
+                <div class="plano__preco">
+                  <span class="plano__preco-label">Ingresso VIP</span>
+                  <b data-ingresso-preco="vip">Vendas abertas</b>
+                  <span class="plano__avista" data-ingresso-avista="vip" hidden>no cartão · ou <strong></strong> à
+                    vista</span>
+                  <span class="plano__preco-nota">Vagas VIP limitadas</span>
+                </div>
+                <a class="btn btn--gold btn--lg btn--block shine" data-compra="vip" href="https://checkout.cppem.com.br/pay/srv-pmpe-ingresso-vip">
+                  <span>Quero o VIP</span>
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- ---------- COMUM ---------- -->
+          <article class="plano">
+            <header class="plano__head">
+              <span class="plano__tag">Acesso completo</span>
+              <h3 class="plano__nome">Ingresso Comum</h3>
+              <p class="plano__desc">Seu lugar na Super Revisão de Véspera, do início ao fim.</p>
+            </header>
+            <ul class="plano__lista">
+              <li>Acesso à Super Revisão de Véspera completa</li>
+              <li>Revisão do conteúdo que cai na prova da PMPE</li>
+              <li>Resolução de questões no estilo da banca</li>
+              <li>Seu lugar no 5º piso do Shopping Difusora</li>
+            </ul>
+            <div class="plano__rodape">
+              <div class="plano__preco">
+                <span class="plano__preco-label">Ingresso Comum</span>
+                <b data-ingresso-preco="comum">Vendas abertas</b>
+                <span class="plano__avista" data-ingresso-avista="comum" hidden>no cartão · ou <strong></strong> à
+                  vista</span>
+                <span class="plano__preco-nota">Vagas limitadas</span>
+              </div>
+              <a class="btn btn--ghost btn--lg btn--block" data-compra="comum" href="https://checkout.cppem.com.br/pay/srv-pmpe-ingresso-comum">
+                <span>Quero o comum</span>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <p class="planos__seguro">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="11" width="14" height="10" rx="1" /><path d="M8 11V8a4 4 0 0 1 8 0v3" /></svg>
+          Pagamento pelo checkout oficial e seguro do CPPEM
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= FAQ ================= -->
+    <section class="section" id="faq" aria-labelledby="faq-title">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow">Antes de decidir</span>
+          <h2 class="section__title" id="faq-title">Dúvidas <span class="gold">frequentes</span></h2>
+        </div>
+
+        <div class="faq">
+          <details class="faq__item">
+            <summary>Onde e quando vai ser a Super Revisão?</summary>
+            <p>
+              No <strong>5º piso do Shopping Difusora</strong>, em Caruaru, no sábado
+              <strong>20 de fevereiro</strong> — a véspera da prova.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>Qual a diferença entre o ingresso comum e o VIP?</summary>
+            <p>
+              Os dois dão acesso à <strong>Super Revisão completa</strong>. O VIP garante lugar nas
+              <strong>primeiras fileiras</strong>, mais perto do palco e do professor.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>Vale a pena revisar na véspera?</summary>
+            <p>
+              Vale. Na véspera ninguém aprende tudo do zero — mas dá para <strong>fechar o conteúdo que
+              mais cai</strong>, relembrar os pontos que escapam e chegar na prova com a cabeça no lugar.
+              É exatamente para isso que a Super Revisão existe.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>Como faço a inscrição?</summary>
+            <p>
+              Escolha o ingresso na seção de ingressos e você é levado direto ao
+              <strong>checkout oficial do CPPEM</strong> para o pagamento.
+            </p>
+          </details>
+          <details class="faq__item">
+            <summary>Tenho outra dúvida. Com quem falo?</summary>
+            <p>
+              Com a equipe do CPPEM no <strong>WhatsApp</strong>, pelo botão verde no canto da tela.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CTA FINAL ================= -->
+    <section class="final">
+      <div class="final__marca" aria-hidden="true"></div>
+      <div class="container final__inner">
+        <div class="selo">
+          <span class="selo__aro" aria-hidden="true"></span>
+          <span class="selo__core">
+            <img src="public/brasao-pmpe.webp" alt="" width="357" height="419" loading="lazy">
+          </span>
+        </div>
+
+        <h2>Amanhã é a prova.<br>Hoje é a <span class="gold">última revisão.</span></h2>
+        <p>
+          Passe a véspera no Shopping Difusora com o time do CPPEM, focado só na prova da
+          <strong>PMPE</strong> — e chegue no dia seguinte pronto.
+        </p>
+
+        <a class="btn btn--gold btn--lg shine" data-cta href="#ingressos">
+          <span>Garantir minha vaga</span>
+        </a>
+        <span class="final__note">20/02 · Shopping Difusora · 5º piso</span>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="footer__leao">
+          <img src="public/emblema-leao.webp" alt="CPPEM Concursos Públicos" width="400" height="465" loading="lazy">
+        </span>
+        <p>&ldquo;Seu sonho é o nosso principal objetivo.&rdquo;</p>
+        <div class="footer__social">
+          <a href="https://wa.me/558173105354" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+            </svg>
+          </a>
+          <a href="https://www.instagram.com/cppemconcursos/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 1.8.3 2.2.4.6.2 1 .5 1.4.9s.7.8.9 1.4c.1.4.3 1 .4 2.2 0 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 1.8-.4 2.2-.2.6-.5 1-.9 1.4s-.8.7-1.4.9c-.4.1-1 .3-2.2.4-1.3 0-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-1.8-.3-2.2-.4a3.8 3.8 0 0 1-1.4-.9 3.8 3.8 0 0 1-.9-1.4c-.1-.4-.3-1-.4-2.2 0-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-1.8.4-2.2.2-.6.5-1 .9-1.4s.8-.7 1.4-.9c.4-.1 1-.3 2.2-.4 1.3 0 1.7-.1 4.9-.1zM12 0C8.7 0 8.3 0 7 .1 5.7.1 4.8.3 4.1.6c-.8.3-1.4.7-2 1.4-.7.6-1.1 1.2-1.4 2C.3 4.7.1 5.6.1 6.9 0 8.2 0 8.6 0 12s0 3.8.1 5.1c0 1.3.2 2.2.5 2.9.3.8.7 1.4 1.4 2 .6.7 1.2 1.1 2 1.4.7.3 1.6.5 2.9.5 1.3.1 1.7.1 5.1.1s3.8 0 5.1-.1c1.3 0 2.2-.2 2.9-.5.8-.3 1.4-.7 2-1.4.7-.6 1.1-1.2 1.4-2 .3-.7.5-1.6.5-2.9.1-1.3.1-1.7.1-5.1s0-3.8-.1-5.1c0-1.3-.2-2.2-.5-2.9-.3-.8-.7-1.4-1.4-2-.6-.7-1.2-1.1-2-1.4-.7-.3-1.6-.5-2.9-.5C15.8 0 15.4 0 12 0zm0 5.8a6.2 6.2 0 1 0 0 12.4 6.2 6.2 0 0 0 0-12.4zm0 10.2a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.4-10.4a1.4 1.4 0 1 1-2.9 0 1.4 1.4 0 0 1 2.9 0z" />
+            </svg>
+          </a>
+          <a href="https://www.tiktok.com/@cppemconcursos" target="_blank" rel="noopener" aria-label="TikTok">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M16.6 5.8a4.3 4.3 0 0 1-1-2.8h-3.3v13.2a2.4 2.4 0 1 1-2.4-2.4c.2 0 .5 0 .7.1v-3.3a5.7 5.7 0 1 0 5 5.7V9.7a7.6 7.6 0 0 0 4.4 1.4V7.8a4.3 4.3 0 0 1-3.4-2z" />
+            </svg>
+          </a>
+          <a href="https://www.youtube.com/@cppemconcursos" target="_blank" rel="noopener" aria-label="YouTube">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M23.5 6.5a3 3 0 0 0-2.1-2.1C19.5 3.9 12 3.9 12 3.9s-7.5 0-9.4.5A3 3 0 0 0 .5 6.5C0 8.4 0 12 0 12s0 3.6.5 5.5a3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.5.5-5.5s0-3.6-.5-5.5zM9.6 15.6V8.4l6.2 3.6-6.2 3.6z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Super Revisão de Véspera">
+        <h4>Super Revisão</h4>
+        <a href="#edicao">Última edição</a>
+        <a href="#onde">Onde e quando</a>
+        <a href="#ingressos">Ingressos</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Cursos">
+        <h4>Cursos</h4>
+        <a href="https://cppem.com.br/turmas" target="_blank" rel="noopener">Turmas</a>
+        <a href="https://unicive.cppem.com.br" target="_blank" rel="noopener">Faculdade EAD</a>
+        <a href="https://loja.cppem.com.br" target="_blank" rel="noopener">Loja</a>
+      </nav>
+
+      <nav class="footer__col" aria-label="Institucional">
+        <h4>Institucional</h4>
+        <a href="https://cppem.com.br/quem-somos" target="_blank" rel="noopener">Quem Somos</a>
+        <a href="https://cppem.com.br/politica-de-privacidade" target="_blank" rel="noopener">Política de
+          Privacidade</a>
+        <a href="https://cppem.notion.site/vagas" target="_blank" rel="noopener">Trabalhe Conosco</a>
+      </nav>
+    </div>
+
+    <div class="container footer__bar">
+      <span>© <span id="year">2026</span> <strong>Cppem Colégio e Cursos LTDA.</strong> · Caruaru, Pernambuco</span>
+      <span class="footer__cnpj">CNPJ 57.347.872/0001-48</span>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="float" id="whats" href="https://wa.me/558173105354" target="_blank" rel="noopener"
+    aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
+    </svg>
+  </a>
+
+  <!-- Barra fixa (mobile) -->
+  <div class="dock" id="dock">
+    <div class="dock__info">
+      <b>Véspera PMPE</b>
+      <span>20/02 · Shopping Difusora</span>
+    </div>
+    <a class="btn btn--gold" data-cta href="#ingressos"><span>Garantir vaga</span></a>
+  </div>
+
+  <!-- Aviso de venda fechada (ingresso sem link no CONFIG) -->
+  <div class="aviso" id="aviso" role="status" aria-live="polite">
+    <i aria-hidden="true"></i>
+    <span>As vendas da <b>Super Revisão de Véspera</b> abrem em breve. Fique de olho nesta página.</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
