@@ -21,7 +21,61 @@
 
   <title>Super Revisão de Véspera PMPE — 20/02 em Caruaru – PE | CPPEM</title>
   <meta name="description"
-    content="Super Revisão de Véspera PMPE do CPPEM em Caruaru – PE: 20 de fevereiro, presencial, no 5º piso do Shopping Difusora, com convidados especiais e o Prof. Everton Mota. A última revisão antes da prova da Polícia Militar de Pernambuco.">
+    content="Aulão presencial de véspera da prova da PMPE em Caruaru – PE: 20/02, no 5º piso do Shopping Difusora, com o Prof. Everton Mota e convidados. Ingressos VIP e Comum.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+  <!-- SEO (docs/seo): dados estruturados de evento presencial. Só o que a página
+       mostra: data, local, mentor e ingressos. Os preços e links precisam
+       ficar iguais a CONFIG.ingressos do script.js — mudou lá, muda aqui.
+       ⚠️ Falta: "url" e "image" absolutos (domínio final), como no og:url. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationEvent",
+    "name": "Super Revisão de Véspera PMPE",
+    "description": "Revisão final presencial na véspera da prova da Polícia Militar de Pernambuco (PMPE), em Caruaru – PE, com o Prof. Everton Mota e convidados especiais.",
+    "startDate": "2027-02-20",
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+    "inLanguage": "pt-BR",
+    "location": {
+      "@type": "Place",
+      "name": "Shopping Difusora — 5º piso",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Caruaru",
+        "addressRegion": "PE",
+        "addressCountry": "BR"
+      }
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "CPPEM Concursos Públicos",
+      "url": "https://cppem.com.br/"
+    },
+    "performer": {
+      "@type": "Person",
+      "name": "Everton Mota"
+    },
+    "offers": [
+      {
+        "@type": "Offer",
+        "name": "Ingresso Comum",
+        "price": "45.00",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/InStock",
+        "url": "https://checkout.cppem.com.br/pay/srv-pmpe-ingresso-comum"
+      },
+      {
+        "@type": "Offer",
+        "name": "Ingresso VIP",
+        "price": "167.00",
+        "priceCurrency": "BRL",
+        "availability": "https://schema.org/LimitedAvailability",
+        "url": "https://checkout.cppem.com.br/pay/srv-pmpe-ingresso-vip"
+      }
+    ]
+  }
+  </script>
 
   <link rel="icon" href="public/favicon.ico" sizes="48x48">
   <link rel="icon" href="public/favicon-192.png" type="image/png" sizes="192x192">
@@ -697,6 +751,7 @@
 
       <nav class="footer__col" aria-label="Cursos">
         <h4>Cursos</h4>
+        <a href="https://pmpe.cppem.com.br/" target="_blank" rel="noopener">Mentoria PMPE</a>
         <a href="https://cppem.com.br/turmas" target="_blank" rel="noopener">Turmas</a>
         <a href="https://unicive.cppem.com.br" target="_blank" rel="noopener">Faculdade EAD</a>
         <a href="https://loja.cppem.com.br" target="_blank" rel="noopener">Loja</a>
