@@ -1,0 +1,7 @@
+# Super Revisão de Véspera PMPE — página do evento
+# Indexável.
+User-agent: *
+Allow: /
+Disallow: /docs/
+
+Sitemap: https://srv-pmpe.cppem.com.br/sitemap.xml
