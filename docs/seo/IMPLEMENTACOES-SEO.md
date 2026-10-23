@@ -21,7 +21,10 @@ Extraídos do HTML renderizado localmente (Playwright/HTTP), antes e depois.
 |---|---|---|
 | `title` | Super Revisão de Véspera PMPE — 20/02 em Caruaru – PE \| CPPEM | Super Revisão de Véspera PMPE — 20/02 em Caruaru – PE \| CPPEM |
 | `description` | Super Revisão de Véspera PMPE do CPPEM em Caruaru – PE: 20 de fevereiro, presencial, no 5º piso do Shopping Difusora, com convidados especiais e o Prof. Everton Mota. A última revisão antes da prova da Polícia Militar de Pernambuco. | Aulão presencial de véspera da prova da PMPE em Caruaru – PE: 20/02, no 5º piso do Shopping Difusora, com o Prof. Everton Mota e convidados. Ingressos VIP e Comum. |
+| `canonical` | — | https://srv-pmpe.cppem.com.br/ |
 | `robots` | — | index, follow, max-image-preview:large |
+| `og:image` | public/prova-03.webp | https://srv-pmpe.cppem.com.br/public/og-super-revisao.jpg |
+| `og:url` | — | https://srv-pmpe.cppem.com.br/ |
 | JSON-LD |  | EducationEvent |
 
 ## Dados estruturados

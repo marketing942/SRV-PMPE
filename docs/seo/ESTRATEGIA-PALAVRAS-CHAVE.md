@@ -54,7 +54,7 @@ URL por intenção.
 
 | Intenção / busca | URL que deve responder | Situação |
 |---|---|---|
-| revisão de véspera / aulão PMPE | esta página (domínio a informar) | Implementado |
+| revisão de véspera / aulão PMPE | srv-pmpe.cppem.com.br | Implementado |
 | mentoria PMPE | pmpe.cppem.com.br | Link no rodapé |
 
 ## Estratégia da página

@@ -5,7 +5,7 @@ Relatório consolidado do ecossistema: [RELATORIO-GERAL-SEO-ECOSSISTEMA.md](RELA
 
 ## Arquitetura
 
-- **Domínio de produção:** não identificado — evidência: o próprio `index.html` registra "⚠️ Falta: og:url (domínio final)".
+- **Domínio de produção:** srv-pmpe.cppem.com.br — evidência: informado pelo responsável em 23/10/2026.
 - **Stack:** HTML + CSS + JavaScript estáticos. Vercel. Fontes do Google (Oxanium, Rajdhani).
 - **Renderização:** HTML estático; preços e contagem regressiva escritos pelo `script.js` a partir do `CONFIG`.
 
@@ -31,7 +31,7 @@ Gravidade: **P0** crítico (indexação/integridade) · **P1** alto impacto · *
 | Sev. | Problema | Evidência | Impacto | Status |
 |---|---|---|---|---|
 | P1 | Sem dados estruturados de evento |  | Sem elegibilidade para a experiência de eventos do Google | Corrigido (EducationEvent) |
-| P1 | Domínio final desconhecido | Sem canonical/og:url; `og:image` relativa (`public/prova-03.webp`) | Preview e consolidação | Pendente (informar o domínio) |
+| P1 | Sem canonical/og:url; og:image relativa | `og:image = public/prova-03.webp` | Preview e consolidação | Corrigido (srv-pmpe.cppem.com.br; JPG 1200×630 e url/image no JSON-LD) |
 | P2 | Description longa (233) |  | Corte; não usava "aulão" | Corrigido (163, com "aulão de véspera") |
 | P2 | Horário e endereço completos ausentes | `CONFIG.inicio` sem hora ("o horário ainda não foi divulgado"); endereço só "Shopping Difusora, 5º piso" | Evento com hora e endereço completo é mais útil e mais completo no Google | Recomendado (o número do shopping diverge entre diretórios: 44 × 444) |
 | P2 | Sem link para a Mentoria PMPE | Mesmo público e mesma prova | Link interno contextual perdido | Corrigido (rodapé → pmpe.cppem.com.br) |

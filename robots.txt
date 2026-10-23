@@ -1,6 +1,7 @@
 # Super Revisão de Véspera PMPE — página do evento
-# Indexável. ⚠️ Quando o domínio final estiver definido, acrescente:
-#   Sitemap: https://<domínio>/sitemap.xml   (e crie o sitemap.xml)
+# Indexável.
 User-agent: *
 Allow: /
 Disallow: /docs/
+
+Sitemap: https://srv-pmpe.cppem.com.br/sitemap.xml

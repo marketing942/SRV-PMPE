@@ -8,7 +8,7 @@ Relatório consolidado do ecossistema: [RELATORIO-GERAL-SEO-ECOSSISTEMA.md](RELA
 ## 0 a 30 dias — correções e quick wins
 
 - **Concluído** — JSON-LD de evento, description, link para a Mentoria
-- **Proposto** — Informar o domínio → canonical, og:url, og:image absoluta, sitemap e `url`/`image` no JSON-LD
+- **Concluído** — Domínio aplicado → canonical, og:url, og:image absoluta, sitemap e `url`/`image` no JSON-LD
 
 ## 31 a 60 dias — expansão semântica e ajustes por dados
 
